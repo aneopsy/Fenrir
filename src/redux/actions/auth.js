@@ -3,7 +3,7 @@ import {
 } from '../middleware/api';
 import * as ACTION from '../constants/auth';
 
-const SERVER = "http://localhost:4000";
+const SERVER = "http://aneopsy.xyz:4000";
 
 export const login = (auth) => {
   return {

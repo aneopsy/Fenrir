@@ -23,6 +23,8 @@ import {
   Table
 } from 'reactstrap';
 
+import Auth from '../../redux/Auth';
+
 const brandPrimary = '#20a8d8';
 const brandSuccess = '#4dbd74';
 const brandInfo = '#63c2de';
@@ -450,8 +452,8 @@ class Dashboard extends Component {
                     </DropdownMenu>
                   </ButtonDropdown>
                 </ButtonGroup>
-                <h4 className="mb-0">9.823</h4>
-                <p>Members online</p>
+                <h4 className="mb-0">{Auth.getUser().username}</h4>
+                <p>User</p>
               </CardBody>
               <div className="chart-wrapper px-3" style={{height:'70px'}}>
                 <Line data={cardChartData1} options={cardChartOpts1} height={70}/>

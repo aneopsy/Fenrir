@@ -29,6 +29,7 @@ const routes = {
   '/ui-kits/invoicing/invoice': 'Invoice',
   '/ui-kits/email/compose': 'Compose',
   '/ui-kits/email/inbox': 'Inbox',
-  '/ui-kits/email/message': 'Message'
+  '/ui-kits/email/message': 'Message',
+  '/profil': 'Profil'
 };
 export default routes;

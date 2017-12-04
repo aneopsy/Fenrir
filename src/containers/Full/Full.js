@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Switch, Route, Redirect} from 'react-router-dom';
 import {Container} from 'reactstrap';
-import Header from '../../components/Header/';
-import Sidebar from '../../components/Sidebar/';
+import Header from '../../redux/containers/Header';
+import Sidebar from '../../redux/containers/Sidebar';
 import Breadcrumb from '../../components/Breadcrumb/';
 import Aside from '../../components/Aside/';
 import Footer from '../../components/Footer/';
@@ -43,6 +43,7 @@ import Message from '../../views/UI-Kits/Email/Message/';
 import Compose from '../../views/UI-Kits/Email/Compose/';
 
 import Profil from '../../views/Profil/';
+import TorrentCompose from '../../views/Torrent/TorrentCompose/';
 
 class Full extends Component {
     render() {
@@ -56,6 +57,7 @@ class Full extends Component {
                         <Switch>
                             <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
                             <Route path="/profil" name="Profil" component={Profil}/>
+                            <Route path="/torrent/compose" name="TorrentCompose" component={TorrentCompose}/>
                             <Route path="/components/buttons" name="Buttons" component={Buttons}/>
                             <Route path="/components/cards" name="Cards" component={Cards}/>
                             <Route path="/components/modals" name="Modals" component={Modals}/>

@@ -35,6 +35,10 @@ class Header extends Component {
     document.body.classList.toggle('aside-menu-hidden');
   }
 
+  handleLogout(e) {
+      this.props.logout();
+  }
+
   render() {
     return (
       <header className="app-header navbar">
@@ -47,7 +51,7 @@ class Header extends Component {
         </NavbarToggler>
         <Nav className="d-md-down-none" navbar>
           <NavItem className="px-3">
-            <NavLink href="#">Dashboard</NavLink>
+            <NavLink href="#" onClick={this.handleLogout.bind(this)} >Dashboard</NavLink>
           </NavItem>
           <NavItem className="px-3">
             <NavLink href="#">Users</NavLink>

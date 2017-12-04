@@ -11,7 +11,76 @@ export default {
         {
             name: 'Profil',
             url: '/profil',
-            icon: 'icon-user-o',
+            icon: 'icon-user',
+        },
+        {
+            title: true,
+            name: 'Torrent',
+            wrapper: { // optional wrapper object
+                element: 'span', // required valid HTML5 element tag
+                attributes: {} // optional valid JS object with JS API naming ex: { className: "my-class", style: { fontFamily: "Verdana" }, id: "my-id"}
+            },
+            class: '' // optional class names space delimited list for title item ex: "text-center"
+        },
+        {
+            name: 'Search',
+            url: '/torrent/search',
+            icon: 'icon-magnifier',
+        },
+        {
+            name: 'Add',
+            url: '/torrent/compose',
+            icon: 'icon-layers',
+        },
+        {
+            title: true,
+            name: 'UI elements',
+            wrapper: { // optional wrapper object
+                element: 'span', // required valid HTML5 element tag
+                attributes: {} // optional valid JS object with JS API naming ex: { className: "my-class", style: { fontFamily: "Verdana" }, id: "my-id"}
+            },
+            class: '' // optional class names space delimited list for title item ex: "text-center"
+        },
+        {
+            name: 'Components',
+            url: '/components',
+            icon: 'icon-puzzle',
+            children: [{
+                    name: 'Buttons',
+                    url: '/components/buttons',
+                    icon: 'icon-puzzle'
+                },
+                {
+                    name: 'Social Buttons',
+                    url: '/components/social-buttons',
+                    icon: 'icon-puzzle'
+                },
+                {
+                    name: 'Cards',
+                    url: '/components/cards',
+                    icon: 'icon-puzzle'
+                },
+                {
+                    name: 'Modals',
+                    url: '/components/modals',
+                    icon: 'icon-puzzle'
+                },
+                {
+                    name: 'Switches',
+                    url: '/components/switches',
+                    icon: 'icon-puzzle'
+                },
+                {
+                    name: 'Tables',
+                    url: '/components/tables',
+                    icon: 'icon-puzzle'
+                },
+                {
+                    name: 'Tabs',
+                    url: '/components/tabs',
+                    icon: 'icon-puzzle'
+                }
+            ]
         },
         {
             title: true,

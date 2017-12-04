@@ -12,7 +12,6 @@ import Auth from '../../redux/Auth';
 
 class Profil extends Component {
     render() {
-        console.log(Auth.getUser());
         return (<div className="animated fadeIn">
             <Card>
                 <CardHeader>

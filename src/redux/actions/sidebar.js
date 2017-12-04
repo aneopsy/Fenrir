@@ -1,7 +1,7 @@
 import { CALL_API } from '../middleware/api';
 import * as ACTION from '../constants/sidebar';
 
-const SERVER = "http://localhost:4000";
+const SERVER = "http://aneopsy.xyz:4000";
 
 export const list = () => {
   return {

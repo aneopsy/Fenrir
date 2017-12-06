@@ -38,21 +38,21 @@ $vimeo:                               #aad450 !default;
 // Navbar
 
 $navbar-height:                       55px !default;
-$navbar-bg:                           #fff !default;
+$navbar-bg:                           #2E3142 !default;
 $navbar-border: (
   bottom: (
-    size:                             1px,
+    size:                             0px,
     style:                            solid,
     color:                            $border-color
   )
 )  !default;
 $navbar-brand-width:                  155px !default;
-$navbar-brand-bg:                     #fff !default;
+$navbar-brand-bg:                     #2E3142 !default;
 $navbar-brand-logo:                   url('../img/logo.png') !default;
 $navbar-brand-logo-size:              70px auto !default;
 $navbar-brand-border: (
   bottom: (
-    size:                             1px,
+    size:                             0px,
     style:                            solid,
     color:                            $border-color
   )
@@ -133,7 +133,7 @@ $sidebar-nav-dropdown-indicator-hover:str-replace(url("data:image/svg+xml;charse
 // Sidebar Footer
 
 $sidebar-footer-height:               auto !default;
-$sidebar-footer-bg:                   rgba(0,0,0,.2) !default;
+$sidebar-footer-bg:                   #21252B !default;
 $sidebar-footer-padding-y:            .75rem !default;
 $sidebar-footer-padding-x:            1rem !default;
 $sidebar-footer-borders:              0 !default;
@@ -156,14 +156,14 @@ $top-nav-bg:                          #fff !default;
 $top-nav-color:                       $body-color !default;
 $top-nav-borders: (
   bottom: (
-    size:                             1px,
+    size:                             0px,
     style:                            solid,
     color:                            $border-color
   )
 ) !default;
 $top-nav-ul-borders: (
   all: (
-    size:                             1px,
+    size:                             0px,
     style:                            solid,
     color:                            $border-color
   )
@@ -178,7 +178,7 @@ $top-nav-height:                      $navbar-height - 15px !default;
 // Breadcrumb
 $breadcrumb-borders: (
   bottom: (
-    size:                             1px,
+    size:                             0px,
     style:                            solid,
     color:                            $border-color
   )
@@ -191,7 +191,7 @@ $aside-menu-color:                    $gray-800 !default;
 $aside-menu-bg:                       #fff !default;
 $aside-menu-borders: (
   left: (
-    size:                             1px,
+    size:                             0px,
     style:                            solid,
     color:                            $border-color
   )
@@ -203,11 +203,11 @@ $aside-menu-nav-padding-x:            1rem !default;
 // Footer
 
 $footer-height:                       50px !default;
-$footer-bg:                           $gray-100 !default;
-$footer-color:                        $body-color !default;
+$footer-bg:                           #21252B !default;
+$footer-color:                        #fff !default;
 $footer-borders: (
   top: (
-    size:                             1px,
+    size:                             0px,
     style:                            solid,
     color:                            $border-color
   )

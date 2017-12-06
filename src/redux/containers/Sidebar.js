@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
+import React, {Component} from 'react';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
 
-import { list } from '../actions/sidebar';
+import {list} from '../actions/sidebar';
 
 import Sidebar from '../../components/Sidebar/';
 
@@ -12,19 +12,15 @@ class SidebarContainer extends Component {
     }
 
     render() {
-      const { sidebar } = this.props;
+        const {sidebar} = this.props;
 
-        return (
-            <Sidebar sidebar={sidebar} {...this.props}/>
-        );
+        return (<Sidebar sidebar={sidebar} {...this.props}/>);
     }
 }
 
-const mapStateToProps = state => ({
-    sidebar: state.sidebar,
-});
+const mapStateToProps = state => ({sidebar: state.sidebar});
 const mapDispatchToProps = (dispatch) => ({
-    list:() => dispatch(list()),
+    list: () => dispatch(list())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SidebarContainer);

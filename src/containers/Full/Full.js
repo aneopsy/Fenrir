@@ -6,14 +6,14 @@ import Sidebar from '../../redux/containers/Sidebar';
 import Breadcrumb from '../../components/Breadcrumb/';
 import Aside from '../../components/Aside/';
 import Footer from '../../components/Footer/';
-import Dashboard from '../../views/Dashboard/';
+import Dashboard from '../../redux/containers/Dashboard';
 import Charts from '../../views/Charts/';
 import Widgets from '../../views/Widgets/';
 
 // Components
 import Buttons from '../../views/Components/Buttons/';
 import Cards from '../../views/Components/Cards/';
-// import Forms from '../../views/Components/Forms/';
+import Forms from '../../views/Components/Forms/';
 import Modals from '../../views/Components/Modals/';
 import SocialButtons from '../../views/Components/SocialButtons/';
 import Switches from '../../views/Components/Switches/';
@@ -45,6 +45,8 @@ import Compose from '../../views/UI-Kits/Email/Compose/';
 import Profil from '../../views/Profil/';
 import TorrentCompose from '../../views/Torrent/TorrentCompose/';
 
+import Reddit from '../../redux/containers/Reddit';
+
 class Full extends Component {
     render() {
         return (<div className="app">
@@ -57,6 +59,7 @@ class Full extends Component {
                         <Switch>
                             <Route path="/dashboard" name="Dashboard" component={Dashboard}/>
                             <Route path="/profil" name="Profil" component={Profil}/>
+                            <Route path="/reddit" name="Profil" component={Reddit}/>
                             <Route path="/torrent/compose" name="TorrentCompose" component={TorrentCompose}/>
                             <Route path="/components/buttons" name="Buttons" component={Buttons}/>
                             <Route path="/components/cards" name="Cards" component={Cards}/>

@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import { withRouter } from 'react-router';
+import React, {Component} from 'react';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {withRouter} from 'react-router';
 
-import { logout } from '../actions/auth';
+import {logout} from '../actions/auth';
 
 import Header from '../../components/Header/';
 
 class HeaderContainer extends Component {
-    transferToDashboardIfLogout(){
-        if (!this.props.auth.user.token){
-            this.props.history.push(this.props.from || { pathname: '/login' });
+    transferToDashboardIfLogout() {
+        if (!this.props.auth.user.token) {
+            this.props.history.push(this.props.from || {
+                pathname: '/login'
+            });
         }
     }
     componentWillMount() {
@@ -21,19 +23,15 @@ class HeaderContainer extends Component {
     }
 
     render() {
-      const { auth, logout } = this.props;
+        const {auth, logout} = this.props;
 
-        return (
-            <Header auth={auth} logout={logout} />
-        );
+        return (<Header auth={auth} logout={logout}/>);
     }
 }
 
-const mapStateToProps = state => ({
-    auth: state.auth,
-});
+const mapStateToProps = state => ({auth: state.auth});
 const mapDispatchToProps = (dispatch) => ({
-    logout:() => dispatch(logout()),
+    logout: () => dispatch(logout())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(HeaderContainer));

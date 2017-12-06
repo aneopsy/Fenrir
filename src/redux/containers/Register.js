@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { register } from '../actions/auth';
 
-import RegisterForm from '../../views/Pages/Register/';
+import RegisterForm from '../../containers/Register/';
 
 class Register extends Component {
     transferToDashboardIfLoggedIn(){

@@ -14,7 +14,7 @@ import {
 } from 'reactstrap';
 
 var mnid = require('mnid');
-import walleter from '../../../modules/walletService';
+import walleter from '../../modules/walletService';
 
 class Register extends Component {
     handleRegister(e) {

@@ -2,7 +2,8 @@ import Auth from '../Auth';
 
 function callApi(endpoint, init, token) {
     let headers = {
-        "Content-Type": "application/json",
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
     };
 
     if (token) {
@@ -16,10 +17,9 @@ function callApi(endpoint, init, token) {
         .then(response => response.json().then(json => {
             if (!response.ok) {
                 return Promise.reject(json);
-            } else if (!json.success) {
+            } else if (json.hasOwnProperty("success") && !json.success) {
                 throw new Error(json.msg);
             }
-
             return json;
         }));
 }

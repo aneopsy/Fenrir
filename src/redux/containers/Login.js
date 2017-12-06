@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { login } from '../actions/auth';
 
-import LoginForm from '../../views/Pages/Login/';
+import LoginForm from '../../containers/Login/';
 import Auth from '../Auth';
 
 class Login extends Component {
